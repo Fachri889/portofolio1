@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fachri - FrontEnd Developer</title>
+    <title>Portofolio Meisya - Fullstack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    
+
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">F.</a>
-            <div class="nav-menu">
+            <a href="#" class="logo">AMZ</a>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
                 <a href="#tentang" class="nav-item">Tentang</a>
                 <a href="#skill" class="nav-item">Skill</a>
                 <a href="#projek" class="nav-item">Projek</a>
@@ -25,8 +32,8 @@
     <header class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Halo, Saya Muhamad Fachri 👋</h1>
-                <p class="hero-tagline">Seorang FrontEnd Developer yang bersemangat</p>
+                <h1 class="hero-title">Halo, Saya Afiqah Meisya Zafarani 👋</h1>
+                <p class="hero-tagline">Seorang Fullstack Developer yang bersemangat</p>
                 <p class="hero-intro">
                     Saya adalah siswa di program studi Pengembang Perangkat Lunak dan Gim. Saya suka membangun aplikasi web yang
                     efisien, interaktif, dan mudah digunakan.
@@ -36,12 +43,15 @@
                     <div class="social-links">
                         <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="profil.jpg" alt="Foto Profil Fachri">
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="foto.jpg" alt="Foto Profil">
+                </div>
             </div>
         </div>
     </header>
@@ -64,19 +74,27 @@
                 <div class="skill-group">
                     <h3>Bahasa Pemrograman</h3>
                     <div class="skill-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js-square"></i>
-                        <i class="fab fa-php"></i>
-                        <i class="fab fa-python"></i>
+                        <i class="fab fa-html5" data-tooltip="HTML5"></i>
+                        <i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
+                        <i class="fab fa-js-square" data-tooltip="JavaScript"></i>
+                        <i class="fab fa-php" data-tooltip="PHP"></i>
+                        <i class="fab fa-python" data-tooltip="Python"></i>
+                        <i class="fab fa-java" data-tooltip="Java"></i>
+                        <i class="fab fa-swift" data-tooltip="Swift"></i>
+                        <i class="fab fa-react" data-tooltip="React"></i>
+                        <i class="fab fa-angular" data-tooltip="Angular"></i>
+                        <i class="fab fa-vuejs" data-tooltip="Vue.js"></i>
+                        <i class="fab fa-bootstrap" data-tooltip="Bootstrap"></i>
+                        <i class="fab fa-node-js" data-tooltip="Node.js"></i>
+                        <i class="fas fa-database" data-tooltip="Database"></i>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h3>Tools</h3>
                     <div class="skill-icons">
-                        <i class="fab fa-github"></i>
-                        <i class="fas fa-code"></i>
-                        <i class="fas fa-brain"></i>
+                        <i class="fab fa-github" data-tooltip="GitHub"></i>
+                        <i class="fas fa-code" data-tooltip="VS Code"></i>
+                        <i class="fas fa-brain" data-tooltip="Problem Solving"></i>
                     </div>
                 </div>
             </div>
@@ -88,16 +106,16 @@
             <h2 class="section-title">Projek Terbaik</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="Screenshot (1).png" alt="Gambar Projek 1">
+                    <img src="" alt="Gambar Projek 1">
                     <div class="project-content">
-                        <h3>Data Warung</h3>
-                        <p class="project-desc">Web ini bisa digunakan untuk menyimpan data</p>
+                        <h3>Belum ada</h3>
+                        <p class="project-desc"></p>
                         <div class="project-tech">
                             <span>#HTML</span>
                         </div>
                         <div class="project-actions">
-                            <a href="input.html" class="btn btn-secondary">Live Demo</a>
-                            <a href="https://github.com/Fachri889/data-warung" class="btn btn-outline">Lihat Kode</a>
+                            <a href="#" class="btn btn-secondary">Live Demo</a>
+                            <a href="#" class="btn btn-outline">Lihat Kode</a>
                         </div>
                     </div>
                 </div>
@@ -142,24 +160,94 @@
     <section class="section bg-dark" id="kontak">
         <div class="container">
             <h2 class="section-title">Hubungi Saya</h2>
-            <div class="contact-info">
-                <p>Silakan hubungi saya untuk kolaborasi atau peluang pekerjaan.</p>
-                <p>Email: <a href="mailto:fachr083@email.com">fachr083@email.com</a></p>
-                <p>Telepon: <a href="tel:+62895355303144">+62 895-3553-03144</a></p>
-                <p>Alamat: Kp.ciomas rahayu</p>
+            <p>Silakan hubungi saya untuk kolaborasi atau peluang pekerjaan.</p>
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form class="kontak-form" id="contactForm">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-tag"></i>
+                            <input type="text" name="subject" placeholder="Subjek" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-comment"></i>
+                            <textarea name="message" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-primary">Kirim Pesan</button>
+                    </form>
+                    <div id="formMessage"></div>
+                </div>
+                <div class="contact-info-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:afiqahmeisyazafarani12@gmail.com">afiqahmeisyazafarani12@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p><a href="tel:+6289515300294">+62 895-1530-0294</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jakarta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Fachri. Hak Cipta Dilindungi.</p>
+            <p>&copy; 2025 Meisya. Hak Cipta Dilindungi.</p>
             <div class="footer-links">
-                <a href="https://github.com/Fachri889" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
-</body>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Kembali ke atas">&#8679;</button>
+
+    <script src="script.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });        // Close menu when clicking on a nav item
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+</body>
 </html>
